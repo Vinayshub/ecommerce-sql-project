@@ -1,0 +1,11 @@
+Create Table customers(
+customer_id INT PRIMARY KEY, 
+customer_name VARCHAR(50),
+city VARCHAR(50)
+);
+Create Table orders(
+order_id INT PRIMARY KEY,
+customer_id INT,
+order_date DATE,
+amount INT
+);

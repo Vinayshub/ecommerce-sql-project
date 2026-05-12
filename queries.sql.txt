@@ -1,0 +1,18 @@
+-- Total spend per customer
+SELECT c.customer_name, SUM(o.amount) AS total_spent
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_name;
+
+-- Top customer
+SELECT c.customer_name, SUM(o.amount) AS total_spent
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_name
+ORDER BY total_spent DESC
+LIMIT 1;
+
+-- Running total
+SELECT order_date,
+SUM(amount) OVER (ORDER BY order_date) AS running_total
+FROM orders;

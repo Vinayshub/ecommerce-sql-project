@@ -1,0 +1,11 @@
+Insert into customers Values(1,'vinay','kadapa'),
+(2,'akila','hyderabad'),
+(3,'kushal','karimnagar'),
+(4,'RAM','kadapa'),
+(5,'Manoj','karimnagar');
+
+Insert into orders Values(1183,1,'2026-05-01',500),
+ (1184,2,'2026-05-01',550),
+(1185,3,'2026-05-05',800),
+ (1186,4,'2026-05-01',600),
+(1187,5,'2026-05-01',500);
